@@ -180,11 +180,11 @@ class WC_Gateway_MasterPass extends WC_Payment_Gateway {
 			'orderAmount' => wc_format_decimal($order->get_total(), 2, false),
 			'currency'    => 'EUR',
 			'payerEmail'  => ( WC()->version >= '3.0.0' ) ? $order->get_billing_email() : $order->billing_email,
-            'payMethod'   => 'auto:MasterPass',
+            		'payMethod'   => 'auto:MasterPass',
 			'billAddress'     => ( WC()->version >= '3.0.0' ) ? $order->get_billing_address_1() : $order->billing_address_1,
-            'billCity'          => ( WC()->version >= '3.0.0' ) ? $order->get_billing_city() : $order->billing_city,
-            'billZip'      => ( WC()->version >= '3.0.0' ) ? $order->get_billing_postcode() : $order->billing_postcode,
-            'billCountry'       => ( WC()->version >= '3.0.0' ) ? $order->get_billing_country() : $order->billing_country
+            		'billCity'          => ( WC()->version >= '3.0.0' ) ? $order->get_billing_city() : $order->billing_city,
+            		'billZip'      => ( WC()->version >= '3.0.0' ) ? $order->get_billing_postcode() : $order->billing_postcode,
+            		'billCountry'       => ( WC()->version >= '3.0.0' ) ? $order->get_billing_country() : $order->billing_country
 		);
 		
 		if ($installments > 0) {
