@@ -1,4 +1,4 @@
-# masterpass-plugin by Matina
+# Masterpass plugin for Wordpress by Matina
 MasterPass Plugin for Wordpress
 
 Just place this folder under wp-content/plugins and then go to your Plugins from your admin WP pannel and activate it :)
